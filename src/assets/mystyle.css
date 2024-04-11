@@ -53,6 +53,22 @@ a {
   margin: 0;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Adjust min and max width as needed */
+  gap: 20px; /* Adjust the padding between cells */
+}
+
+.grid-item {
+  padding: 10px;
+  /* You can add additional styling for grid items, such as padding, border, etc. */
+}
+
+.grid-item img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto;
+}
+
 /* sidebar "about me" */
 h2 {
   font-family: var(--script);
@@ -161,12 +177,6 @@ article:hover {
     0 0 15px rgba(182, 162, 181, 1);
 }
 
-.spotlight {
-  grid-column: 1;
-  grid-row: 2;
-  position: relative;
-}
-
 .project {
   position: relative;
 }
@@ -239,11 +249,6 @@ article:hover {
   .sidebar {
     grid-column: 2;
     grid-row: 1 / 4;
-  }
-
-  .spotlight {
-    grid-column: 1;
-    grid-row: 1;
   }
 }
 

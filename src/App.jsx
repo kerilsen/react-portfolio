@@ -17,7 +17,7 @@ export default function App() {
         {/* <Nav currentPage={currentPage} /> */}
       </Header>
       <main>
-        {/* <Portfolio /> */}
+        <Portfolio />
         {/* <Page currentPage={currentPage} /> */}
       </main>
       <Footer />
