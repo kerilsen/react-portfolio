@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section className="text-with-image">
       <img
-        src="../assets/digital-nerd.jpeg"
+        src="../assets/avatar.jpg"
         alt="Avatar of girl with glasses"
         className="responsive img-small image"
       />
