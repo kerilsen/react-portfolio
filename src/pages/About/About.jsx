@@ -1,14 +1,18 @@
+import { useEffect } from "react";
+import { TextWithImage, Image, Text } from "./About.styles";
+
 export default function About() {
+  useEffect(() => {
+    document.title = "About Me";
+  }, []);
+
   return (
-    <section className="text-with-image">
-      <img
-        src="../assets/digital-nerd.jpeg"
-        alt="Avatar of girl with glasses"
-        className="responsive img-small image"
-      />
-      <div className="text">
+    <>
+    <h2>about me</h2>
+    <TextWithImage>
+      <Image src="./assets/avatar.jpg" alt="Avatar of girl with glasses" />
+      <Text>
         <p>
-          <h2>about me</h2>
           I'm a junior web developer and an ex-librarian who loves organization
           and pretty things!
         </p>
@@ -19,7 +23,9 @@ export default function About() {
           love rainy days and iced coffee. I can't wait to create new things and
           learn more. Watch this space for real content coming soon!
         </p>
-      </div>
-    </section>
+        <p>Here's some more that I have to say.</p>
+      </Text>
+    </TextWithImage>
+    </>
   );
 }

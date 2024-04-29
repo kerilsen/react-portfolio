@@ -12,6 +12,12 @@
   --mauve: #d89fa2;
   --taupe: #8e716a;
   --sage: #9faca5;
+  /* CSS HEX */
+  --moonstone: #5c9eadff;
+  --tea-green: #d7f2baff;
+  --paynes-gray: #326273ff;
+  --melon: #ffa69eff;
+  --indian-red: #e5625eff;
   --script: "League Script", "Brush Script MT", cursive;
   --type: "Lora", "Georgia", serif;
 }
@@ -36,10 +42,11 @@ a {
   font-weight: 600;
 }
 
-.top-banner {
+/* .top-banner {
   background-image: url("./bg-image.jpg");
   background-size: cover;
   background-position: center;
+  position: fixed;
   color: white;
   padding: 50px;
   text-align: center;
@@ -55,19 +62,21 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Adjust min and max width as needed */
-  gap: 20px; /* Adjust the padding between cells */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(500px, 1fr)
+  ); 
+  gap: 20px; 
 }
 
 .grid-item {
   padding: 10px;
-  /* You can add additional styling for grid items, such as padding, border, etc. */
 }
 
 .grid-item img {
-  max-width: 100%; /* Ensure images don't exceed their container */
+  max-width: 100%;
   height: auto;
-}
+} */
 
 /* sidebar "about me" */
 h2 {
@@ -101,7 +110,7 @@ h3 {
 
 /* Formatting an image with text flowing around it to the right */
 
-.text-with-image {
+/* .text-with-image {
   display: flex;
   align-items: center;
 }
@@ -115,9 +124,9 @@ h3 {
 
 .text {
   flex: 1;
-}
+} */
 
-.topnav {
+/* .topnav {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -125,19 +134,27 @@ h3 {
   font-size: 0.75em;
 }
 
-.topnav a {
+.nav-item {
   margin: 0 0.5rem;
 }
 
-.topnav a.active {
+.nav-link {
+  color: white;
+}
+
+.nav-link-active {
   background-color: var(--white);
   opacity: 0.7;
   border-radius: 50px;
 }
 
-.topnav a:hover {
-  color: var(--dark);
+.nav-link-active:hover {
+  color: var(--coral);
 }
+
+.nav-link:hover {
+  color: var(--coral);
+} */
 
 /* Main grid that holds the body of the page */
 .grid {
@@ -164,49 +181,7 @@ h3 {
   align-items: flex-start;
 }
 
-article {
-  opacity: 0.4;
-  transition: opacity 0.5s;
-  border-radius: 8px;
-  transition: all 0.5s ease-in-out;
-}
-
-article:hover {
-  opacity: 1;
-  box-shadow: inset 0px 0px 8px rgba(182, 162, 181, 1),
-    0 0 15px rgba(182, 162, 181, 1);
-}
-
-.project {
-  position: relative;
-}
-
-.app-title {
-  position: absolute;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  z-index: 2;
-  border-radius: 0px 50px 50px 0px;
-  background-color: var(--white);
-  opacity: 0.7;
-  max-width: 23rem;
-}
-
-.caption {
-  position: absolute;
-  width: 100%;
-  height: 2rem;
-  bottom: 8px;
-  background-color: var(--white);
-  text-align: center;
-  z-index: 2;
-  opacity: 0.7;
-  font-family: var(--script);
-  text-transform: lowercase;
-  font-size: 1.5em;
-}
-
-.footer {
+/* .footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -217,9 +192,9 @@ article:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.social-icons a {
+/* .social-icons a {
   color: white;
   margin: 0 10px;
   font-size: 24px;
@@ -227,7 +202,7 @@ article:hover {
 
 .social-icons a:hover {
   color: lightgray;
-}
+} */
 
 /* Large devices (tablets in landscape mode and small laptops, min-width 768px) */
 
