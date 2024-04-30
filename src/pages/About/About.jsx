@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { TextWithImage, Image, Text } from "./About.styles";
+import { Container, Logo, SmallCard, BigCard } from "./About.styles";
 
 export default function About() {
   useEffect(() => {
@@ -9,9 +9,11 @@ export default function About() {
   return (
     <>
     <h2>about me</h2>
-    <TextWithImage>
-      <Image src="./assets/avatar.jpg" alt="Avatar of girl with glasses" />
-      <Text>
+    <Container>
+      <SmallCard>
+        <Logo src="./assets/digital-nerd.png" alt="Avatar of girl with glasses" />
+        </SmallCard>
+      <BigCard>
         <p>
           I'm a junior web developer and an ex-librarian who loves organization
           and pretty things!
@@ -24,8 +26,8 @@ export default function About() {
           learn more. Watch this space for real content coming soon!
         </p>
         <p>Here's some more that I have to say.</p>
-      </Text>
-    </TextWithImage>
+      </BigCard>
+    </Container>
     </>
   );
 }

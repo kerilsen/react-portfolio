@@ -31,9 +31,20 @@ html, body {
     font-size: 1.3125em;
     line-height: 1.6;
     width: 100%;
-    background-image: url("./assets/bg-image.jpg");
-    background-size: 100% auto;
+  }
+
+  .watermark {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/europeana-SMWPYQhVRuY-unsplash.jpg");
+    background-size: cover;
     background-position: center;
+    opacity: 0.4;
+    pointer-events: none;
+    z-index: -1;
   }
 
   button {

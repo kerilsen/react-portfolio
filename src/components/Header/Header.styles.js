@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
-export const TopBanner = styled.header`
-  // background-image: url("./assets/bg-image.jpg");
-  width: 100%;
-  height: 15%;
-  // background-size: cover;
-  // background-position: center;
-  position: relative;
-  color: white;
-  padding: 50px;
+export const CircleContainer = styled.div`
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 100px;
   text-align: center;
 `;
 
 export const BannerTitle = styled.h1`
   font-family: var(--script);
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   line-height: 40%;
-  padding-top: 1rem;
-  margin: 0;
+  margin: auto;
+  color: white;
 `;
 
 export const NavBar = styled.div`
