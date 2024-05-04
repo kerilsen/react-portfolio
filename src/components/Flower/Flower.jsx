@@ -1,46 +1,43 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
-  width: 200px;
-  height: 200px;
-`;
-
 const MainCircle = styled.div`
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 1px solid black;
-  position: relative;
+  position: absolute;
   display: flex;
+  margin-left: 33.3%;
+  margin-top: 33.3%;
   justify-content: center;
   align-items: center;
 `;
 
 const SmallCircle = styled.div`
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background-color: #E9B872;
   border-radius: 50%;
+  border: 3px dotted var(--taupe);
   position: absolute;
 `;
 
 const SmallCircle1 = styled(SmallCircle)`
   top: 10px;
-  left: 10px;
+  left: 11px;
 `;
 
 const SmallCircle2 = styled(SmallCircle)`
   top: 10px;
-  right: 10px;
+  right: 12px;
 `;
 
 const SmallCircle3 = styled(SmallCircle)`
-  bottom: 10px;
-  left: 10px;
+  bottom: 8px;
+  left: 15px;
 `;
 
 const SmallCircle4 = styled(SmallCircle)`
-  bottom: 10px;
+  bottom: 13px;
   right: 10px;
 `;
 
@@ -52,7 +49,6 @@ const SmallCircle5 = styled(SmallCircle)`
 
 export default function Stamen() {
   return (
-    <Container>
       <MainCircle>
         <SmallCircle1 />
         <SmallCircle2 />
@@ -60,6 +56,5 @@ export default function Stamen() {
         <SmallCircle4 />
         <SmallCircle5 />
       </MainCircle>
-    </Container>
   );
 }

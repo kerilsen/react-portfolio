@@ -1,30 +1,65 @@
-import { NavBar, NavList, NavItem, NavLink } from "./Nav.styles";
+import { useState } from "react";
+import { Circle, NavLink, ExternalLink } from "./Nav.styles";
+import Stamen from "../Flower/Flower";
 
 export default function Nav({ currentPage }) {
+ 
+  const [selectedCircle, setSelectedCircle] = useState(null);
+
+  const handleHoverCircle = (position) => {
+    setSelectedCircle(position);
+  };
+
   return (
-    <NavBar>
-      <NavList>
-        <NavItem>
-          <NavLink to="/" currentPage={currentPage}>
-            About
+    <>
+      <Circle
+        $position="top"
+        onMouseEnter={() => handleHoverCircle("top")}
+        onMouseLeave={() => handleHoverCircle(null)}
+      >
+        <NavLink to="/portfolio" currentPage={currentPage}>
+            portfolio
           </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/portfolio" currentPage={currentPage}>
-            Portfolio
+      </Circle>
+      <Circle
+        $position="bottom"
+        onMouseEnter={() => handleHoverCircle("bottom")}
+        onMouseLeave={() => handleHoverCircle(null)}
+      >
+        <NavLink to="/contact" currentPage={currentPage}>
+            contact
           </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/contact" currentPage={currentPage}>
-            Contact
+      </Circle>
+      <Circle
+        $position="left"
+        onMouseEnter={() => handleHoverCircle("left")}
+        onMouseLeave={() => handleHoverCircle(null)}
+      >
+        about
+      </Circle>
+      <Circle
+        $position="right"
+        onMouseEnter={() => handleHoverCircle("right")}
+        onMouseLeave={() => handleHoverCircle(null)}
+      >
+        <NavLink to="/resume" currentPage={currentPage}>
+            resume
           </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink to="/resume" currentPage={currentPage}>
-            Resume
-          </NavLink>
-        </NavItem>
-      </NavList>
-    </NavBar>
+      </Circle>
+      {/* <Circle
+        $position="center"
+        onMouseEnter={() => handleHoverCircle("center")}
+        onMouseLeave={() => handleHoverCircle(null)}
+       /> */}
+      <Circle
+        $position="fifth"
+        onMouseEnter={() => handleHoverCircle("fifth")}
+        onMouseLeave={() => handleHoverCircle(null)}
+      >
+        
+        <ExternalLink href="https://github.com/kerilsen">github</ExternalLink>
+      </Circle>
+      <Stamen $position="center" />
+    </>
   );
 }
