@@ -1,15 +1,20 @@
 import Nav from "../Nav/Nav";
-import { CircleContainer, BannerTitle, NavBar } from "./Header.styles";
+import {
+  Wrapper,
+  LogoContainer,
+  BannerTitle,
+  FlowerContainer,
+} from "./Header.styles";
 
 export default function Header() {
   return (
-    <>
-      <CircleContainer>
+    <Wrapper>
+      <LogoContainer>
         <BannerTitle>keri sen</BannerTitle>
-      </CircleContainer>
-      <NavBar>
+      </LogoContainer>
+      <FlowerContainer>
         <Nav />
-      </NavBar>
-    </>
+      </FlowerContainer>
+    </Wrapper>
   );
 }
