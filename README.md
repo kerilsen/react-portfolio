@@ -29,15 +29,19 @@
   ## Usage
 
   Navigate to the url at [Netlify](https://kerisen.netlify.app) and you will enter the site on the "About" page.
+  
   ![Screenshot of About Me page](./public/assets/screencapture-about.png)
   
   Hover over the navigation links on the right side and click on the "portfolio" link to view my web portfolio.
+  
 ![Screenshot of Portfolio page](./public/assets/screencapture-portfolio.png)
 
 Click on the "resume" link to view and/or download a pdf version of [my resume](./public/assets/KeriSenResume.pdf).
+
 ![Screenshot of Resume page](./public/assets/screencapture-resume.png)
 
 Please feel free to click on the "contact" link to send me a message!
+
 ![Screenshot of Contact page](./public/assets/screencapture-contact.png)
 
   ## Contributing
