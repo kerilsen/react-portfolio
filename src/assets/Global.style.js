@@ -31,6 +31,13 @@ html, body {
     font-size: 1.3125em;
     line-height: 1.6;
     width: 100%;
+    margin-bottom: 140px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
   }
 
   .watermark {
@@ -39,6 +46,7 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
+    // background-image: url("./assets/zoe-schaeffer-r2SY2zsBmgM-unsplash.jpg");
     background-image: url("./assets/europeana-SMWPYQhVRuY-unsplash.jpg");
     background-size: cover;
     background-position: center;
@@ -64,7 +72,6 @@ html, body {
     }
   }
 
-  /* sidebar "about me" */
 h2 {
   font-family: var(--script);
   line-height: 1;
@@ -76,6 +83,18 @@ h2 {
 /* app titles */
 h3 {
   font-size: 2rem;
+  position: relative;
+}
+
+.responsive {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+.stretchimage {
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 `;

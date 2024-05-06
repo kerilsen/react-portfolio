@@ -7,7 +7,7 @@ export const Circle = styled.div`
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
-  transition: all 0.3s ease-in-out;
+  transition: all 1s ease-in-out;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -19,41 +19,35 @@ export const Circle = styled.div`
   }
   ${({ $position }) => {
     switch ($position) {
-      case "top":
+      case "portfolio":
         return css`
-          top: 0px;
-          left: 50%;
-          transform: translateX(-50%);
+          top: -50px;
+          left: 30%;
+          transform: translateY(50%);
         `;
-      case "bottom":
-        return css`
-          bottom: 5px;
-          left: 40%;
-          transform: translateX(-50%);
-        `;
-      case "left":
-        return css`
-          top: 50%;
-          left: 0px;
-          transform: translateY(-50%);
-        `;
-      case "right":
-        return css`
-          top: 40%;
-          right: 5px;
-          transform: translateY(-50%);
-        `;
-      case "center":
-        return css`
-          top: 50%;
-          left: 33.3%;
-          transform: translateY(-50%);
-        `;
-      case "fifth":
+      case "contact":
         return css`
           bottom: -45px;
-          right: 10%;
-          transform: translateY(-50%);
+          left: -10%;
+          transform: translate(50%, -50%);
+        `;
+      case "about":
+        return css`
+          top: 18%;
+          left: -45px;
+          transform: translateX(50%);
+        `;
+      case "resume":
+        return css`
+          top: 18%;
+          right: -55px;
+          transform: translateX(-50%);
+        `;
+      case "github":
+        return css`
+          bottom: -45px;
+          right: -10%;
+          transform: translate(-50%, -50%);
         `;
       default:
         return null;
@@ -62,26 +56,5 @@ export const Circle = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-color: ${($props) => ($props.currentPage === "/" ? "white" : "black")};
-background-color: ${($props) => ($props.currentPage === "/" ? "white" : "none")};
-opacity: ${($props) => ($props.currentPage === "/" ? 0.7 : 1)};
-border-radius: ${($props) => ($props.currentPage === "/" ? 50 : 0)}
-&:hover {
-    color: var(--coral);
-}
+  color: ${(props) => (props.currentPage === "/" ? "white" : "black")};
 `;
-
-export const ExternalLink = styled.a`
-color: white;
-  }
-  
- &:active {
-    background-color: var(--white);
-    opacity: 0.7;
-    border-radius: 50px;
-  }
-  
-  &:hover {
-    color: var(--coral);
-  }
-`
