@@ -19,6 +19,7 @@ const SmallCircle = styled.div`
   border-radius: 50%;
   border: 3px dotted var(--taupe);
   position: absolute;
+  opacity: 0.5;
 `;
 
 const SmallCircle1 = styled(SmallCircle)`

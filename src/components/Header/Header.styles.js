@@ -21,9 +21,9 @@ export const LogoContainer = styled.div`
   margin-top: 100px;
   margin-left: 100px;
   text-align: center;
-  // @media screen and (max-width: 600px) {
-  //   width: 100%;
-  // }
+  @media screen and (max-width: 800px) {
+    margin: auto;
+  }
 `;
 
 export const BannerTitle = styled.h1`
@@ -42,7 +42,10 @@ export const FlowerContainer = styled.div`
   margin-right: 100px;
   margin-top: 100px;
   font-family: var(--sans-serif);
-  // @media screen and (max-width: 600px) {
-  //   width: 100%;
-  // }
+  @media screen and (max-width: 800px) {
+    margin: auto;
+  }
+  @media screen and (max-width: 300px) {
+    display: none;
+  }
 `;
