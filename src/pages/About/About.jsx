@@ -20,7 +20,7 @@ export default function About() {
         </p>
         <p>
           I have a degree in English literature and my Master's degree in Library and Information Studies and have recently completed a full stack flex coding bootcamp. I'm highly resourceful, a creative thinker, excellent writer and a quick learner with an interest in visual storytelling and UX/UI.
-          love rainy days and iced coffee. 
+          I love rainy days and iced coffee. 
         </p>
         <p>For a limited time only, I'm taking on free projects to gain experience if you want to get in on the action!</p>
         <Link to="/contact">
